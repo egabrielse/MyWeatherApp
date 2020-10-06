@@ -1,0 +1,142 @@
+[
+    {
+        "location": {
+            "name": "Chicago",
+            "region": "Illinois",
+            "country": "United States of America",
+            "lat": 41.85,
+            "lon": -87.65,
+            "tz_id": "America/Chicago",
+            "localtime_epoch": 1601946053,
+            "localtime": "2020-10-05 20:00"
+        },
+        "current": {
+            "last_updated_epoch": 1601945107,
+            "last_updated": "2020-10-05 19:45",
+            "temp_c": 15.0,
+            "temp_f": 59.0,
+            "is_day": 1,
+            "condition": {
+                "text": "Partly cloudy",
+                "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+                "code": 1003
+            },
+            "wind_mph": 11.9,
+            "wind_kph": 19.1,
+            "wind_degree": 190,
+            "wind_dir": "S",
+            "humidity": 34,
+            "cloud": 25,
+            "feelslike_c": 13.3,
+            "feelslike_f": 56.0,
+            "vis_km": 16.0,
+            "vis_miles": 9.0,
+            "uv": 5.0
+        }
+    },
+    {
+        "location": {
+            "name": "New York",
+            "region": "New York",
+            "country": "United States of America",
+            "lat": 40.71,
+            "lon": -74.01,
+            "tz_id": "America/New_York",
+            "localtime_epoch": 1601946129,
+            "localtime": "2020-10-05 21:02"
+        },
+        "current": {
+            "last_updated_epoch": 1601946006,
+            "last_updated": "2020-10-05 21:00",
+            "temp_c": 16.1,
+            "temp_f": 61.0,
+            "is_day": 1,
+            "condition": {
+                "text": "Sunny",
+                "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                "code": 1000
+            },
+            "wind_mph": 0.0,
+            "wind_kph": 0.0,
+            "wind_degree": 138,
+            "wind_dir": "SE",
+            "humidity": 78,
+            "cloud": 0,
+            "feelslike_c": 16.1,
+            "feelslike_f": 61.0,
+            "vis_km": 16.0,
+            "vis_miles": 9.0,
+            "uv": 5.0
+        }
+    },
+    {
+        "location": {
+            "name": "San Francisco",
+            "region": "California",
+            "country": "United States of America",
+            "lat": 37.78,
+            "lon": -122.42,
+            "tz_id": "America/Los_Angeles",
+            "localtime_epoch": 1601946209,
+            "localtime": "2020-10-05 18:03"
+        },
+        "current": {
+            "last_updated_epoch": 1601946007,
+            "last_updated": "2020-10-05 18:00",
+            "temp_c": 20.0,
+            "temp_f": 68.0,
+            "is_day": 1,
+            "condition": {
+                "text": "Partly cloudy",
+                "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+                "code": 1003
+            },
+            "wind_mph": 11.9,
+            "wind_kph": 19.1,
+            "wind_degree": 310,
+            "wind_dir": "NW",
+            "humidity": 68,
+            "cloud": 25,
+            "feelslike_c": 20.0,
+            "feelslike_f": 68.0,
+            "vis_km": 16.0,
+            "vis_miles": 9.0,
+            "uv": 7.0
+        }
+    },
+    {
+        "location": {
+            "name": "Austin",
+            "region": "Texas",
+            "country": "United States of America",
+            "lat": 30.27,
+            "lon": -97.74,
+            "tz_id": "America/Chicago",
+            "localtime_epoch": 1601946254,
+            "localtime": "2020-10-05 20:04"
+        },
+        "current": {
+            "last_updated_epoch": 1601946006,
+            "last_updated": "2020-10-05 20:00",
+            "temp_c": 26.1,
+            "temp_f": 79.0,
+            "is_day": 1,
+            "condition": {
+                "text": "Sunny",
+                "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                "code": 1000
+            },
+            "wind_mph": 0.0,
+            "wind_kph": 0.0,
+            "wind_degree": 0,
+            "wind_dir": "N",
+            "humidity": 47,
+            "cloud": 0,
+            "feelslike_c": 26.2,
+            "feelslike_f": 79.2,
+            "vis_km": 16.0,
+            "vis_miles": 9.0,
+            "uv": 7.0
+        }
+    }
+]

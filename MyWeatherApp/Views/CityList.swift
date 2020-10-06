@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CityList.swift
 //  MyWeatherApp
 //
 //  Created by Ethan Gabrielse on 10/5/20.
@@ -8,16 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CityList: View {    
     var body: some View {
-        Text("Hello World!")
+        Text("Hello World")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CityList_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CityList()
     }
 }
-
-
