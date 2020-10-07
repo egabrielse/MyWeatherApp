@@ -8,7 +8,10 @@
 
 import Foundation
 
-let current: [ResponseBody] = load("currentWeather.json");
+let testSnapshots: [Snapshot] = load("currentWeather.json");
+let testUniqueSnapshots: [UniqueSnapshot] = identify(snapshots: testSnapshots);
+
+private var identifier = 1000;
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
@@ -30,4 +33,17 @@ func load<T: Decodable>(_ filename: String) -> T {
     } catch {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
+}
+
+func identify(snapshots: [Snapshot]) -> [UniqueSnapshot] {
+    var uniqeSnaps: [UniqueSnapshot] = [UniqueSnapshot]();
+    
+    for snap in snapshots {
+        var unique: UniqueSnapshot;
+        unique = UniqueSnapshot(id: identifier, location: snap.location, current: snap.current)
+        identifier += 1;
+        uniqeSnaps.append(unique);
+    }
+    
+    return uniqeSnaps;
 }

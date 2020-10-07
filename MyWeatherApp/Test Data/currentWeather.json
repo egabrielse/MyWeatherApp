@@ -34,6 +34,7 @@
             "uv": 5.0
         }
     },
+    
     {
         "location": {
             "name": "New York",
@@ -69,6 +70,7 @@
             "uv": 5.0
         }
     },
+    
     {
         "location": {
             "name": "San Francisco",
@@ -104,6 +106,7 @@
             "uv": 7.0
         }
     },
+    
     {
         "location": {
             "name": "Austin",
@@ -139,4 +142,5 @@
             "uv": 7.0
         }
     }
+    
 ]

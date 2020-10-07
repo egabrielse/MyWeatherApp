@@ -8,10 +8,7 @@
 
 import Foundation
 
-
-private let url: String 
-
-private func getWeatherData() {
+private func getWeatherData(url: String) {
     
     URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: {data, response, error in
         guard let data = data, error == nil else {
@@ -19,10 +16,11 @@ private func getWeatherData() {
             return
         }
         
-        var body: ResponseBody?
         
+        var body: Snapshot?
+
         do {
-            body = try JSONDecoder().decode(ResponseBody.self, from: data);
+            body = try JSONDecoder().decode(Snapshot.self, from: data);
         } catch {
             print(error)
         }

@@ -8,9 +8,14 @@
 
 import SwiftUI
 
-struct CityList: View {    
+struct CityList: View {
+
     var body: some View {
-        Text("Hello World")
+        Button(action: {
+            print("Hello World")
+        }) {
+            Text("Hello World")
+        }
     }
 }
 
