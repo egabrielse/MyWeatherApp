@@ -1,0 +1,1194 @@
+{
+    "location": {
+        "name": "London",
+        "region": "City of London, Greater London",
+        "country": "United Kingdom",
+        "lat": 51.52,
+        "lon": -0.11,
+        "tz_id": "Europe/London",
+        "localtime_epoch": 1602106677,
+        "localtime": "2020-10-07 22:37"
+    },
+    "current": {
+        "last_updated_epoch": 1602106210,
+        "last_updated": "2020-10-07 22:30",
+        "temp_c": 13.0,
+        "temp_f": 55.4,
+        "is_day": 0,
+        "condition": {
+            "text": "Light rain",
+            "icon": "//cdn.weatherapi.com/weather/64x64/night/296.png"
+        },
+        "wind_mph": 6.9,
+        "wind_kph": 11.2,
+        "wind_dir": "SSW",
+        "humidity": 88,
+        "feelslike_c": 12.0,
+        "feelslike_f": 53.6,
+        "vis_km": 10.0,
+        "vis_miles": 6.0,
+        "uv": 1.0
+    },
+    "forecast": {
+        "forecastday": [
+            {
+                "date": "2020-10-07",
+                "date_epoch": 1602028800,
+                "day": {
+                    "maxtemp_c": 15.0,
+                    "maxtemp_f": 59.0,
+                    "mintemp_c": 10.7,
+                    "mintemp_f": 51.3,
+                    "totalprecip_mm": 0.5,
+                    "totalprecip_in": 0.02,
+                    "daily_will_it_rain": 1,
+                    "daily_chance_of_rain": "95",
+                    "daily_will_it_snow": 0,
+                    "daily_chance_of_snow": "0",
+                    "condition": {
+                        "text": "Moderate rain at times",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/299.png"
+                    }
+                },
+                "astro": {
+                    "sunrise": "07:12 AM",
+                    "sunset": "06:24 PM"
+                },
+                "hour": [
+                    {
+                        "time_epoch": 1602025200,
+                        "time": "2020-10-07 00:00",
+                        "temp_c": 11.9,
+                        "temp_f": 53.4,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602028800,
+                        "time": "2020-10-07 01:00",
+                        "temp_c": 11.8,
+                        "temp_f": 53.2,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602032400,
+                        "time": "2020-10-07 02:00",
+                        "temp_c": 11.6,
+                        "temp_f": 52.9,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602036000,
+                        "time": "2020-10-07 03:00",
+                        "temp_c": 11.5,
+                        "temp_f": 52.7,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602039600,
+                        "time": "2020-10-07 04:00",
+                        "temp_c": 11.2,
+                        "temp_f": 52.2,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602043200,
+                        "time": "2020-10-07 05:00",
+                        "temp_c": 11.0,
+                        "temp_f": 51.8,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602046800,
+                        "time": "2020-10-07 06:00",
+                        "temp_c": 10.7,
+                        "temp_f": 51.3,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602050400,
+                        "time": "2020-10-07 07:00",
+                        "temp_c": 11.2,
+                        "temp_f": 52.2,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602054000,
+                        "time": "2020-10-07 08:00",
+                        "temp_c": 11.7,
+                        "temp_f": 53.1,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602057600,
+                        "time": "2020-10-07 09:00",
+                        "temp_c": 12.2,
+                        "temp_f": 54.0,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602061200,
+                        "time": "2020-10-07 10:00",
+                        "temp_c": 13.1,
+                        "temp_f": 55.6,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602064800,
+                        "time": "2020-10-07 11:00",
+                        "temp_c": 13.9,
+                        "temp_f": 57.0,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602068400,
+                        "time": "2020-10-07 12:00",
+                        "temp_c": 14.8,
+                        "temp_f": 58.6,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602072000,
+                        "time": "2020-10-07 13:00",
+                        "temp_c": 14.9,
+                        "temp_f": 58.8,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602075600,
+                        "time": "2020-10-07 14:00",
+                        "temp_c": 14.9,
+                        "temp_f": 58.8,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602079200,
+                        "time": "2020-10-07 15:00",
+                        "temp_c": 15.0,
+                        "temp_f": 59.0,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602082800,
+                        "time": "2020-10-07 16:00",
+                        "temp_c": 14.8,
+                        "temp_f": 58.6,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602086400,
+                        "time": "2020-10-07 17:00",
+                        "temp_c": 14.7,
+                        "temp_f": 58.5,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602090000,
+                        "time": "2020-10-07 18:00",
+                        "temp_c": 14.5,
+                        "temp_f": 58.1,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602093600,
+                        "time": "2020-10-07 19:00",
+                        "temp_c": 14.1,
+                        "temp_f": 57.4,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Light drizzle",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/266.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "32",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602097200,
+                        "time": "2020-10-07 20:00",
+                        "temp_c": 13.7,
+                        "temp_f": 56.7,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "63",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602100800,
+                        "time": "2020-10-07 21:00",
+                        "temp_c": 13.3,
+                        "temp_f": 55.9,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Light drizzle",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/266.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "95",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602104400,
+                        "time": "2020-10-07 22:00",
+                        "temp_c": 13.2,
+                        "temp_f": 55.8,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Moderate rain",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/302.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "95",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602108000,
+                        "time": "2020-10-07 23:00",
+                        "temp_c": 13.1,
+                        "temp_f": 55.6,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Light drizzle",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/266.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "94",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    }
+                ]
+            },
+            {
+                "date": "2020-10-08",
+                "date_epoch": 1602115200,
+                "day": {
+                    "maxtemp_c": 17.1,
+                    "maxtemp_f": 62.8,
+                    "mintemp_c": 13.0,
+                    "mintemp_f": 55.4,
+                    "totalprecip_mm": 5.6,
+                    "totalprecip_in": 0.22,
+                    "daily_will_it_rain": 1,
+                    "daily_chance_of_rain": "94",
+                    "daily_will_it_snow": 0,
+                    "daily_chance_of_snow": "0",
+                    "condition": {
+                        "text": "Light drizzle",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/266.png"
+                    }
+                },
+                "astro": {
+                    "sunrise": "07:13 AM",
+                    "sunset": "06:21 PM"
+                },
+                "hour": [
+                    {
+                        "time_epoch": 1602111600,
+                        "time": "2020-10-08 00:00",
+                        "temp_c": 13.0,
+                        "temp_f": 55.4,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Moderate rain",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/302.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "94",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602115200,
+                        "time": "2020-10-08 01:00",
+                        "temp_c": 13.7,
+                        "temp_f": 56.7,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Light rain",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/296.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "88",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602118800,
+                        "time": "2020-10-08 02:00",
+                        "temp_c": 14.3,
+                        "temp_f": 57.7,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Moderate rain",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/302.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "82",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602122400,
+                        "time": "2020-10-08 03:00",
+                        "temp_c": 15.0,
+                        "temp_f": 59.0,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Light rain",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/296.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "76",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602126000,
+                        "time": "2020-10-08 04:00",
+                        "temp_c": 15.1,
+                        "temp_f": 59.2,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Light drizzle",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/266.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "71",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602129600,
+                        "time": "2020-10-08 05:00",
+                        "temp_c": 15.2,
+                        "temp_f": 59.4,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Light rain",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/296.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "66",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602133200,
+                        "time": "2020-10-08 06:00",
+                        "temp_c": 15.3,
+                        "temp_f": 59.5,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Light drizzle",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/266.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "61",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602136800,
+                        "time": "2020-10-08 07:00",
+                        "temp_c": 15.6,
+                        "temp_f": 60.1,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Light drizzle",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/266.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "59",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602140400,
+                        "time": "2020-10-08 08:00",
+                        "temp_c": 16.0,
+                        "temp_f": 60.8,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Light drizzle",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/266.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "57",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602144000,
+                        "time": "2020-10-08 09:00",
+                        "temp_c": 16.3,
+                        "temp_f": 61.3,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Light drizzle",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/266.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "54",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602147600,
+                        "time": "2020-10-08 10:00",
+                        "temp_c": 16.4,
+                        "temp_f": 61.5,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Overcast",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "36",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602151200,
+                        "time": "2020-10-08 11:00",
+                        "temp_c": 16.5,
+                        "temp_f": 61.7,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Light drizzle",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/266.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "18",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602154800,
+                        "time": "2020-10-08 12:00",
+                        "temp_c": 16.6,
+                        "temp_f": 61.9,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Overcast",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602158400,
+                        "time": "2020-10-08 13:00",
+                        "temp_c": 16.8,
+                        "temp_f": 62.2,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Patchy light drizzle",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/263.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "22",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602162000,
+                        "time": "2020-10-08 14:00",
+                        "temp_c": 16.9,
+                        "temp_f": 62.4,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Overcast",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "44",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602165600,
+                        "time": "2020-10-08 15:00",
+                        "temp_c": 17.1,
+                        "temp_f": 62.8,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Patchy light drizzle",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/263.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "66",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602169200,
+                        "time": "2020-10-08 16:00",
+                        "temp_c": 16.6,
+                        "temp_f": 61.9,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "44",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602172800,
+                        "time": "2020-10-08 17:00",
+                        "temp_c": 16.1,
+                        "temp_f": 61.0,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Patchy light drizzle",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/263.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "22",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602176400,
+                        "time": "2020-10-08 18:00",
+                        "temp_c": 15.6,
+                        "temp_f": 60.1,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602180000,
+                        "time": "2020-10-08 19:00",
+                        "temp_c": 15.1,
+                        "temp_f": 59.2,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602183600,
+                        "time": "2020-10-08 20:00",
+                        "temp_c": 14.5,
+                        "temp_f": 58.1,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602187200,
+                        "time": "2020-10-08 21:00",
+                        "temp_c": 14.0,
+                        "temp_f": 57.2,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602190800,
+                        "time": "2020-10-08 22:00",
+                        "temp_c": 13.7,
+                        "temp_f": 56.7,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602194400,
+                        "time": "2020-10-08 23:00",
+                        "temp_c": 13.3,
+                        "temp_f": 55.9,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    }
+                ]
+            },
+            {
+                "date": "2020-10-09",
+                "date_epoch": 1602201600,
+                "day": {
+                    "maxtemp_c": 14.6,
+                    "maxtemp_f": 58.3,
+                    "mintemp_c": 10.7,
+                    "mintemp_f": 51.3,
+                    "totalprecip_mm": 1.9,
+                    "totalprecip_in": 0.07,
+                    "daily_will_it_rain": 1,
+                    "daily_chance_of_rain": "87",
+                    "daily_will_it_snow": 0,
+                    "daily_chance_of_snow": "0",
+                    "condition": {
+                        "text": "Moderate or heavy rain shower",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/356.png"
+                    }
+                },
+                "astro": {
+                    "sunrise": "07:15 AM",
+                    "sunset": "06:19 PM"
+                },
+                "hour": [
+                    {
+                        "time_epoch": 1602198000,
+                        "time": "2020-10-09 00:00",
+                        "temp_c": 13.0,
+                        "temp_f": 55.4,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602201600,
+                        "time": "2020-10-09 01:00",
+                        "temp_c": 12.8,
+                        "temp_f": 55.0,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602205200,
+                        "time": "2020-10-09 02:00",
+                        "temp_c": 12.7,
+                        "temp_f": 54.9,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602208800,
+                        "time": "2020-10-09 03:00",
+                        "temp_c": 12.5,
+                        "temp_f": 54.5,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602212400,
+                        "time": "2020-10-09 04:00",
+                        "temp_c": 12.1,
+                        "temp_f": 53.8,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602216000,
+                        "time": "2020-10-09 05:00",
+                        "temp_c": 11.8,
+                        "temp_f": 53.2,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602219600,
+                        "time": "2020-10-09 06:00",
+                        "temp_c": 11.4,
+                        "temp_f": 52.5,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602223200,
+                        "time": "2020-10-09 07:00",
+                        "temp_c": 11.7,
+                        "temp_f": 53.1,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602226800,
+                        "time": "2020-10-09 08:00",
+                        "temp_c": 12.1,
+                        "temp_f": 53.8,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602230400,
+                        "time": "2020-10-09 09:00",
+                        "temp_c": 12.4,
+                        "temp_f": 54.3,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602234000,
+                        "time": "2020-10-09 10:00",
+                        "temp_c": 13.1,
+                        "temp_f": 55.6,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602237600,
+                        "time": "2020-10-09 11:00",
+                        "temp_c": 13.9,
+                        "temp_f": 57.0,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602241200,
+                        "time": "2020-10-09 12:00",
+                        "temp_c": 14.6,
+                        "temp_f": 58.3,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "0",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602244800,
+                        "time": "2020-10-09 13:00",
+                        "temp_c": 14.5,
+                        "temp_f": 58.1,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Light rain shower",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/353.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "27",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602248400,
+                        "time": "2020-10-09 14:00",
+                        "temp_c": 14.4,
+                        "temp_f": 57.9,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "54",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602252000,
+                        "time": "2020-10-09 15:00",
+                        "temp_c": 14.3,
+                        "temp_f": 57.7,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Light rain shower",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/353.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "80",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602255600,
+                        "time": "2020-10-09 16:00",
+                        "temp_c": 13.8,
+                        "temp_f": 56.8,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Light rain shower",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/353.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "75",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602259200,
+                        "time": "2020-10-09 17:00",
+                        "temp_c": 13.2,
+                        "temp_f": 55.8,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Light rain shower",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/353.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "70",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602262800,
+                        "time": "2020-10-09 18:00",
+                        "temp_c": 12.7,
+                        "temp_f": 54.9,
+                        "is_day": 1,
+                        "condition": {
+                            "text": "Light rain shower",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/353.png"
+                        },
+                        "will_it_rain": 0,
+                        "chance_of_rain": "65",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602266400,
+                        "time": "2020-10-09 19:00",
+                        "temp_c": 12.0,
+                        "temp_f": 53.6,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Patchy rain possible",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "72",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602270000,
+                        "time": "2020-10-09 20:00",
+                        "temp_c": 11.4,
+                        "temp_f": 52.5,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Light rain shower",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/353.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "80",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602273600,
+                        "time": "2020-10-09 21:00",
+                        "temp_c": 10.7,
+                        "temp_f": 51.3,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Patchy rain possible",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "87",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602277200,
+                        "time": "2020-10-09 22:00",
+                        "temp_c": 10.2,
+                        "temp_f": 50.4,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Patchy rain possible",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "80",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    },
+                    {
+                        "time_epoch": 1602280800,
+                        "time": "2020-10-09 23:00",
+                        "temp_c": 9.8,
+                        "temp_f": 49.6,
+                        "is_day": 0,
+                        "condition": {
+                            "text": "Patchy rain possible",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png"
+                        },
+                        "will_it_rain": 1,
+                        "chance_of_rain": "74",
+                        "will_it_snow": 0,
+                        "chance_of_snow": "0"
+                    }
+                ]
+            }
+        ]
+    }
+}

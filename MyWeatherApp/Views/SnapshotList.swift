@@ -8,19 +8,20 @@
 
 import SwiftUI
 
-struct CityList: View {
-
+struct SnapshotList: View {
+    var snapshots: [Snapshot];
+    
     var body: some View {
-        Button(action: {
-            print("Hello World")
-        }) {
-            Text("Hello World")
+        List {
+            ForEach(snapshots, id: \.id) { snap in
+                SnapshotRow(snapshot: snap);
+            }
         }
     }
 }
 
 struct CityList_Previews: PreviewProvider {
     static var previews: some View {
-        CityList()
+        SnapshotList(snapshots: testSnapshots)
     }
 }
