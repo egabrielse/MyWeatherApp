@@ -34,9 +34,9 @@
 		02CC681425309E1D00166A1E /* DetailBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC681325309E1D00166A1E /* DetailBox.swift */; };
 		02CC681625309F3500166A1E /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC681525309F3500166A1E /* DetailRow.swift */; };
 		02CC68182530A28C00166A1E /* DetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC68172530A28C00166A1E /* DetailList.swift */; };
-		02CC681C2530D0DB00166A1E /* WeatherReportOverview.gif in Resources */ = {isa = PBXBuildFile; fileRef = 02CC681B2530D0DB00166A1E /* WeatherReportOverview.gif */; };
 		02CC681E2530D1E900166A1E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 02CC681D2530D1E900166A1E /* README.md */; };
 		02CC68202530D22A00166A1E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 02CC681F2530D22900166A1E /* .gitignore */; };
+		02CC68222530D53E00166A1E /* WeatherReportOverview.gif in Resources */ = {isa = PBXBuildFile; fileRef = 02CC68212530D53D00166A1E /* WeatherReportOverview.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,9 +90,9 @@
 		02CC681325309E1D00166A1E /* DetailBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBox.swift; sourceTree = "<group>"; };
 		02CC681525309F3500166A1E /* DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
 		02CC68172530A28C00166A1E /* DetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailList.swift; sourceTree = "<group>"; };
-		02CC681B2530D0DB00166A1E /* WeatherReportOverview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = WeatherReportOverview.gif; path = ../../../../Desktop/WeatherReportOverview.gif; sourceTree = "<group>"; };
 		02CC681D2530D1E900166A1E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		02CC681F2530D22900166A1E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		02CC68212530D53D00166A1E /* WeatherReportOverview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WeatherReportOverview.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,7 +229,7 @@
 		02CC681A2530D0C000166A1E /* PortfolioGifs */ = {
 			isa = PBXGroup;
 			children = (
-				02CC681B2530D0DB00166A1E /* WeatherReportOverview.gif */,
+				02CC68212530D53D00166A1E /* WeatherReportOverview.gif */,
 			);
 			path = PortfolioGifs;
 			sourceTree = "<group>";
@@ -339,12 +339,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				02CC68202530D22A00166A1E /* .gitignore in Resources */,
+				02CC68222530D53E00166A1E /* WeatherReportOverview.gif in Resources */,
 				02CC67F8252CBFA300166A1E /* testReport.json in Resources */,
 				02CC67BA252BB36A00166A1E /* LaunchScreen.storyboard in Resources */,
 				02CC67B7252BB36A00166A1E /* Preview Assets.xcassets in Resources */,
 				02CC681E2530D1E900166A1E /* README.md in Resources */,
 				02CC67B4252BB36A00166A1E /* Assets.xcassets in Resources */,
-				02CC681C2530D0DB00166A1E /* WeatherReportOverview.gif in Resources */,
 				02CC67F2252BF92700166A1E /* testSnapshots.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
