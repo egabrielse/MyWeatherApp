@@ -11,15 +11,9 @@ import SwiftUI
 struct DailyForecastRow: View {
     var forecastDay: ForecastDay;
     
-    private func getDayOfTheWeek(date: Date) -> String{
-        let dateFormatter = DateFormatter();
-        dateFormatter.dateFormat = "EEEE";
-        return dateFormatter.string(from: date)
-    }
-    
     var body: some View {
         HStack{
-            Text(getDayOfTheWeek(date: forecastDay.current_time)).bold()
+            Text(forecastDay.day_of_the_week).bold()
                 .font(.system(size:20))
                 .foregroundColor(Color.white)
                 .shadow(radius: 2)
@@ -27,12 +21,12 @@ struct DailyForecastRow: View {
             Spacer()
             forecastDay.day.image.resizable().frame(height: 35).frame(width:35)
             Spacer()
-            Text("H: " + String(format: "%.f\u{00B0}", forecastDay.day.maxtemp_f)).bold()
+            Text(forecastDay.day.print_maxtemp_f).bold()
                 .font(.system(size:20))
                 .foregroundColor(Color.white)
                 .shadow(radius: 2)
                 
-            Text("L: " + String(format: "%.f\u{00B0}", forecastDay.day.mintemp_f)).bold()
+            Text(forecastDay.day.print_mintemp_f).bold()
                 .font(.system(size:20))
                 .foregroundColor(Color.white)
                 .shadow(radius: 2)

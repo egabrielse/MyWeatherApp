@@ -11,41 +11,24 @@ import SwiftUI
 struct HourlyForecastBox: View {
     var hour: Hour;
     
-    fileprivate func getTime(date: Date) -> String {
-        let dateFormatter = DateFormatter();
-        dateFormatter.dateFormat = "HH:mm";
-        return dateFormatter.string(from: date)
-    }
-    
-    fileprivate func chanceOfPrecipitation() -> String {
-        if hour.will_it_rain == 1 {
-            return hour.chance_of_rain + "%";
-        } else if hour.will_it_snow == 1 {
-            return hour.chance_of_rain + "%";
-        } else {
-            return "";
-        }
-    }
-    
     var body: some View {
         VStack(spacing: 0) {
             // Temperature:
-            Text(String(format: "%.f\u{00B0}", hour.temp_f))
+            Text(hour.print_temp_f)
                 .font(.system(size: 20))
                 .foregroundColor(Color.white)
                 .shadow(radius: 2)
             
-            
             // Image:
             hour.image.resizable().frame(width: 35).frame(height:35)
             
-            Text(chanceOfPrecipitation())
+            Text(hour.print_chance_of_rain)
                 .font(.system(size:12))
                 .foregroundColor(Color.blue)
                 .bold()
                 .frame(height: 20)
 
-            Text(getTime(date:hour.time))
+            Text(hour.print_time)
                 .font(.system(size: 20))
                 .foregroundColor(Color.white)
                 .shadow(radius: 2)

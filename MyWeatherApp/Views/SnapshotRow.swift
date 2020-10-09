@@ -19,7 +19,7 @@ struct SnapshotRow: View {
             }
             Spacer()
             snapshot.current.image.resizable().frame(height:50).frame(width:50);
-            Text(String(format: "%.f\u{00B0}", snapshot.current.temp_f))
+            Text(snapshot.current.print_temp_f)
                 .font(.system(size: 32))
                 .bold()
                 

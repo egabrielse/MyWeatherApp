@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DetailedWeatherReport: View {
     @EnvironmentObject var userData: UserData;
     
     var body: some View {
@@ -22,18 +22,19 @@ struct ContentView: View {
                     Divider()
                     DailyForecastList(dailyForecast: testReport.forecast.forecastday)
                     Divider()
-                    DetailList(current: testReport.current, astro: testReport.forecast.forecastday[0].astro)
-                }.padding(.top).padding(.bottom)
+                    DetailList(current: testReport.current, day: testReport.forecast.forecastday[0].day, astro: testReport.forecast.forecastday[0].astro)
+                }
             }
         }.background(Color.lightBlue)
         .edgesIgnoringSafeArea(.top)
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
-            ContentView().environmentObject(UserData())
+            DetailedWeatherReport().environmentObject(UserData())
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }

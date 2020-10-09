@@ -25,7 +25,7 @@ struct BriefOverview: View {
              
             // Current temperature
             // TODO: Center the temperature, ignoring the degree symbol
-            Text(String(format: "%.f\u{00B0}", report.current.temp_f))
+            Text(report.current.print_temp_f)
                 .foregroundColor(Color.white)
                 .font(.system(size:100))
                 .fontWeight(.thin)
@@ -36,7 +36,7 @@ struct BriefOverview: View {
             // Hstack containts: weather high, low, and image
             HStack {
                 // Highest temperature of the day
-                Text("H: " +  String(format: "%.f\u{00B0}", report.forecast.forecastday[0].day.maxtemp_f))
+                Text(report.forecast.forecastday[0].day.print_maxtemp_f)
                     .foregroundColor(Color.white)
                     .font(.system(size:32))
                     .shadow(radius: 2)
@@ -45,7 +45,7 @@ struct BriefOverview: View {
                 report.current.image.resizable().frame(height:100).frame(width:100)
                 
                 // Lowest temperature of the day
-                Text("L: " +  String(format: "%.f\u{00B0}", report.forecast.forecastday[0].day.mintemp_f))
+                Text(report.forecast.forecastday[0].day.print_mintemp_f)
                     .foregroundColor(Color.white)
                     .font(.system(size:32))
                     .shadow(radius: 2)

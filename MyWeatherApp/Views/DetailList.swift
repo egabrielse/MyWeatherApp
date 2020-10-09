@@ -10,6 +10,7 @@ import SwiftUI
 
 struct DetailList: View {
     var current: Current;
+    var day: Day;
     var astro: Astro;
     
     private func formatWind(metric: Bool, speed: Double, dir: String) -> String {
@@ -36,19 +37,26 @@ struct DetailList: View {
                 .opacity(0.75)
                 .shadow(radius: 2)
                 .padding(.leading)
+                .padding(.top)
             DetailRow(leftTitle: "Sunrise", rightTitle: "Sunset", leftValue: astro.sunrise, rightValue: astro.sunset)
             
             DetailRow(leftTitle: "Humidity", rightTitle: "Feels Like", leftValue:
-                String(current.humidity)+"%", rightValue: String(format: "%.f\u{00B0}", current.feelslike_f))
+            current.print_humidity, rightValue: current.print_feelslike_f)
             
-            DetailRow(leftTitle: "Visibility", rightTitle: "Wind", leftValue: formatVis(metric: false, visibility: current.vis_miles), rightValue: formatWind(metric: false, speed: current.wind_mph, dir: current.wind_dir))
+            DetailRow(leftTitle: "Chance of Rain", rightTitle: "Chance of Snow", leftValue: day.print_daily_chance_of_rain, rightValue: day.print_daily_chance_of_snow)
+            
+            DetailRow(leftTitle: "Precipitation", rightTitle: "Wind", leftValue: day.print_totalprecip_in, rightValue: current.print_wind_mph)
+            
+            DetailRow(leftTitle: "Visibility", rightTitle: "UV Index", leftValue: current.print_vis_miles, rightValue: current.print_uv)
+            
+            
         }
     }
 }
 
 struct DetailList_Previews: PreviewProvider {
     static var previews: some View {
-        DetailList(current: testReport.current, astro: testReport.forecast.forecastday[0].astro)
+        DetailList(current: testReport.current, day: testReport.forecast.forecastday[0].day, astro: testReport.forecast.forecastday[0].astro)
             .background(Color.lightBlue)
     }
 }

@@ -20,6 +20,7 @@ struct HourlyForecastList: View {
                 .opacity(0.5)
                 .shadow(radius: 2)
                 .padding(.leading)
+                .padding(.top)
             ScrollView(.horizontal) {
                 // TODO: Implement forecasting for only now and later
                 HStack {

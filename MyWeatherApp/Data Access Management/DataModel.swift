@@ -76,6 +76,7 @@ struct Current: Codable, Hashable {
     let feelslike_f: Double;
     let vis_km: Double;
     let vis_miles: Double;
+    let uv: Double;
 }
 
 //  Extension adds an Image field to Current using the given image url in condition.
@@ -87,6 +88,39 @@ extension Current {
             imageId = "day" + imageId;
         }
         return Image(imageId);
+    }
+}
+
+extension Current {
+    var print_temp_c: String {
+        return String(format: "%.f\u{00B0}", temp_c);
+    }
+    var print_temp_f: String {
+        return String(format: "%.f\u{00B0}", temp_f);
+    }
+    var print_feelslike_c: String {
+        return String(format: "%.f\u{00B0}", feelslike_c);
+    }
+    var print_feelslike_f: String {
+        return String(format: "%.f\u{00B0}", feelslike_f);
+    }
+    var print_wind_kph: String {
+        return wind_dir + " " + String(wind_kph) + " kph";
+    }
+    var print_wind_mph: String {
+        return wind_dir + " " + String(wind_mph) + " mph";
+    }
+    var print_vis_kilo: String {
+        return String(vis_km) + " kilometers";
+    }
+    var print_vis_miles: String {
+        return String(vis_miles) + " miles";
+    }
+    var print_humidity: String {
+        return String(humidity) + "%";
+    }
+    var print_uv: String {
+        return String(uv);
     }
 }
 
@@ -118,6 +152,14 @@ extension ForecastDay {
     }
 }
 
+extension ForecastDay {
+    var day_of_the_week: String {
+        let dateFormatter = DateFormatter();
+        dateFormatter.dateFormat = "EEEE";
+        return dateFormatter.string(from: current_time)
+    }
+}
+
 
 // MARK: Day
 struct Day: Codable, Hashable {
@@ -142,6 +184,34 @@ extension Day {
     }
 }
 
+extension Day {
+    var print_maxtemp_c: String {
+        return "H: " + String(format: "%.f\u{00B0}", maxtemp_c);
+    }
+    var print_maxtemp_f: String {
+        return "H: " + String(format: "%.f\u{00B0}", maxtemp_f);
+    }
+    var print_mintemp_c: String {
+        return "L: " + String(format: "%.f\u{00B0}", mintemp_c);
+    }
+    var print_mintemp_f: String {
+        return "L: " + String(format: "%.f\u{00B0}", mintemp_f);
+    }
+    var print_totalprecip_mm: String {
+        return String(totalprecip_mm) + " mm"
+    }
+    var print_totalprecip_in: String {
+        return String(totalprecip_in) + " in"
+    }
+    var print_daily_chance_of_rain: String {
+        return daily_chance_of_rain + "%";
+    }
+    var print_daily_chance_of_snow: String {
+        return daily_chance_of_snow + "%";
+    }
+    
+}
+
 
 
 // MARK: Astro
@@ -164,8 +234,43 @@ struct Hour: Codable, Hashable {
 }
 
 extension Hour {
+    var print_temp_c: String {
+        return String(format: "%.f\u{00B0}", temp_c);
+    }
+    var print_temp_f: String {
+        return String(format: "%.f\u{00B0}", temp_f);
+    }
+    
+    // Data from weather api appears to be incorrect, regarding the will_it_rain
+    // and will_it_snow fields. They often are zero, despite chance_of_rain and
+    // chance_of_snow being positive
+    var print_chance_of_rain: String {
+        if chance_of_rain != "0" {
+            return String(chance_of_rain) + "%";
+        } else {
+            return ""
+        }
+    }
+    var print_chance_of_snow: String {
+        if chance_of_snow != "0" {
+            return String(chance_of_snow) + "%";
+        } else {
+            return ""
+        }
+    }
+}
+
+extension Hour {
     var time: Date {
         return Date(timeIntervalSince1970: Double(time_epoch));
+    }
+}
+
+extension Hour {
+    var print_time: String {
+        let dateFormatter = DateFormatter();
+        dateFormatter.dateFormat = "HH:mm";
+        return dateFormatter.string(from: time)
     }
 }
 

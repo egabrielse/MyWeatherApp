@@ -19,6 +19,7 @@ struct DailyForecastList: View {
                 .opacity(0.5)
                 .shadow(radius: 2)
                 .padding(.leading)
+                .padding(.top)
             ForEach(dailyForecast, id: \.date_epoch) {day in
                 DailyForecastRow(forecastDay: day)
             }
