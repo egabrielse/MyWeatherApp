@@ -137,7 +137,7 @@ struct Day: Codable, Hashable {
 extension Day {
     var image: Image {
         // Get the image id number
-        var imageId: String = String(String(condition.icon.suffix(7)).prefix(3));
+        let imageId: String = String(String(condition.icon.suffix(7)).prefix(3));
         return Image("day" + imageId);
     }
 }

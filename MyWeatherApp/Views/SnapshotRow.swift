@@ -18,10 +18,11 @@ struct SnapshotRow: View {
                 Text(snapshot.current.condition.text).font(.subheadline)
             }
             Spacer()
-            snapshot.current.image.frame(height:35);
+            snapshot.current.image.resizable().frame(height:50).frame(width:50);
             Text(String(format: "%.f\u{00B0}", snapshot.current.temp_f))
-                .bold()
                 .font(.system(size: 32))
+                .bold()
+                
         }.padding(.horizontal)
     }
 }

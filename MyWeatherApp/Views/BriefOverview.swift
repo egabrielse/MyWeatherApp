@@ -31,6 +31,7 @@ struct BriefOverview: View {
                 .fontWeight(.thin)
                 .shadow(radius: 2)
                 .frame(height: 90)
+                .frame(maxWidth:.infinity)
             
             // Hstack containts: weather high, low, and image
             HStack {
@@ -55,14 +56,19 @@ struct BriefOverview: View {
                 .foregroundColor(Color.white)
                 .font(.system(size: 24))
                 .shadow(radius: 2)
-                .padding(.bottom)
-        }
+                
+        }.padding(.top).padding(.bottom)
         .frame(maxWidth: .infinity)
     }
 }
 
 struct CurrentForecast_Previews: PreviewProvider {
     static var previews: some View {
-        BriefOverview(report: testReport).background(Color.lightBlue)
+        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
+            BriefOverview(report: testReport).background(Color.lightBlue)
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
+        
     }
 }

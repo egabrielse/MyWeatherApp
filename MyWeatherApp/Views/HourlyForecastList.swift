@@ -12,10 +12,20 @@ struct HourlyForecastList: View {
     var hourlyForecast: [Hour];
     
     var body: some View {
-        ScrollView(.horizontal) {
-            HStack {
-                ForEach(hourlyForecast, id: \.time_epoch) {hour in
-                    HourlyForecastBox(hour: hour);
+        
+        VStack(alignment:.leading, spacing:0) {
+            Text("Hourly Forecast").bold()
+                .foregroundColor(Color.white)
+                .font(.system(size:20))
+                .opacity(0.5)
+                .shadow(radius: 2)
+                .padding(.leading)
+            ScrollView(.horizontal) {
+                // TODO: Implement forecasting for only now and later
+                HStack {
+                    ForEach(hourlyForecast, id: \.time_epoch) {hour in
+                        HourlyForecastBox(hour: hour);
+                    }
                 }
             }
         }

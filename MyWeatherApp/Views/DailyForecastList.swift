@@ -12,13 +12,15 @@ struct DailyForecastList: View {
     var dailyForecast: [ForecastDay];
     
     var body: some View {
-        VStack {
-            Divider()
+        VStack(alignment:.leading,spacing:0) {
+            Text("3-Day Forecast").bold()
+                .foregroundColor(Color.white)
+                .font(.system(size:20))
+                .opacity(0.5)
+                .shadow(radius: 2)
+                .padding(.leading)
             ForEach(dailyForecast, id: \.date_epoch) {day in
-                VStack {
-                    DailyForecastRow(forecastDay: day)
-                    Divider()
-                }
+                DailyForecastRow(forecastDay: day)
             }
         }
     }
