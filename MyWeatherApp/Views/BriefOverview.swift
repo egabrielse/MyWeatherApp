@@ -18,7 +18,7 @@ struct BriefOverview: View {
                 .fontWeight(.light)
                 .foregroundColor(Color.white)
                 .font(.system(size:60))
-                .shadow(radius: 1)
+                .shadow(radius: 2)
                 .frame(height: 45)
                 .padding(.top)
             
@@ -29,7 +29,7 @@ struct BriefOverview: View {
                 .foregroundColor(Color.white)
                 .font(.system(size:100))
                 .fontWeight(.thin)
-                .shadow(radius: 1)
+                .shadow(radius: 2)
                 .frame(height: 90)
             
             // Hstack containts: weather high, low, and image
@@ -38,7 +38,7 @@ struct BriefOverview: View {
                 Text("H: " +  String(format: "%.f\u{00B0}", report.forecast.forecastday[0].day.maxtemp_f))
                     .foregroundColor(Color.white)
                     .font(.system(size:32))
-                    .shadow(radius: 1)
+                    .shadow(radius: 2)
                 
                 // Image description of current weather
                 report.current.image.resizable().frame(height:100).frame(width:100)
@@ -47,14 +47,14 @@ struct BriefOverview: View {
                 Text("L: " +  String(format: "%.f\u{00B0}", report.forecast.forecastday[0].day.mintemp_f))
                     .foregroundColor(Color.white)
                     .font(.system(size:32))
-                    .shadow(radius: 1)
+                    .shadow(radius: 2)
             }
             
             // Current weather description
             Text(report.current.condition.text)
                 .foregroundColor(Color.white)
                 .font(.system(size: 24))
-                .shadow(radius: 1)
+                .shadow(radius: 2)
                 .padding(.bottom)
         }
         .frame(maxWidth: .infinity)

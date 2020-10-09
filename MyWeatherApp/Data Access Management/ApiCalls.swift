@@ -56,7 +56,7 @@ func getWeatherData(city: String, forecasted: Bool) throws -> Data? {
         semaphore.signal();
     }).resume();
     
-    let dispatchResult = semaphore.wait(timeout: DispatchTime.distantFuture); // Await for 5 seconds
+    let dispatchResult = semaphore.wait(timeout: DispatchTime.distantFuture);
     
     if dispatchResult == DispatchTimeoutResult.timedOut {
         throw NetworkError.timeout(message: "Api call to has timed out.")
