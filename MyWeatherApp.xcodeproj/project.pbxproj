@@ -29,6 +29,8 @@
 		02CC6808252F9F4A00166A1E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC6807252F9F4A00166A1E /* Constants.swift */; };
 		02CC680A252FC2F000166A1E /* HourlyForecastList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC6809252FC2F000166A1E /* HourlyForecastList.swift */; };
 		02CC680C252FC89100166A1E /* DailyForecastRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC680B252FC89100166A1E /* DailyForecastRow.swift */; };
+		02CC6810252FF8A400166A1E /* ApiURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC680F252FF8A400166A1E /* ApiURL.swift */; };
+		02CC681225300F1E00166A1E /* DailyForecastList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC681125300F1E00166A1E /* DailyForecastList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		02CC6807252F9F4A00166A1E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		02CC6809252FC2F000166A1E /* HourlyForecastList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastList.swift; sourceTree = "<group>"; };
 		02CC680B252FC89100166A1E /* DailyForecastRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastRow.swift; sourceTree = "<group>"; };
+		02CC680F252FF8A400166A1E /* ApiURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApiURL.swift; path = ../Views/ApiURL.swift; sourceTree = "<group>"; };
+		02CC681125300F1E00166A1E /* DailyForecastList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 		02CC67DD252BB45800166A1E /* Data Access Management */ = {
 			isa = PBXGroup;
 			children = (
+				02CC680F252FF8A400166A1E /* ApiURL.swift */,
 				02CC67FB252E177200166A1E /* UserData.swift */,
 				02CC67E5252BD46C00166A1E /* DataModel.swift */,
 				02CC67F9252D6DA200166A1E /* ApiCalls.swift */,
@@ -181,13 +186,14 @@
 		02CC67E0252BB56600166A1E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				02CC67E9252BD53B00166A1E /* SnapshotRow.swift */,
-				02CC67EB252BD54E00166A1E /* SnapshotList.swift */,
-				02CC67FF252E234D00166A1E /* HourlyForecastBox.swift */,
 				02CC6801252E23A200166A1E /* BriefOverview.swift */,
 				02CC6807252F9F4A00166A1E /* Constants.swift */,
-				02CC6809252FC2F000166A1E /* HourlyForecastList.swift */,
 				02CC680B252FC89100166A1E /* DailyForecastRow.swift */,
+				02CC681125300F1E00166A1E /* DailyForecastList.swift */,
+				02CC67FF252E234D00166A1E /* HourlyForecastBox.swift */,
+				02CC6809252FC2F000166A1E /* HourlyForecastList.swift */,
+				02CC67EB252BD54E00166A1E /* SnapshotList.swift */,
+				02CC67E9252BD53B00166A1E /* SnapshotRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -338,7 +344,9 @@
 				02CC67E6252BD46C00166A1E /* DataModel.swift in Sources */,
 				02CC67AE252BB36500166A1E /* AppDelegate.swift in Sources */,
 				02CC67B0252BB36500166A1E /* SceneDelegate.swift in Sources */,
+				02CC681225300F1E00166A1E /* DailyForecastList.swift in Sources */,
 				02CC6802252E23A200166A1E /* BriefOverview.swift in Sources */,
+				02CC6810252FF8A400166A1E /* ApiURL.swift in Sources */,
 				02CC67FC252E177200166A1E /* UserData.swift in Sources */,
 				02CC67FA252D6DA200166A1E /* ApiCalls.swift in Sources */,
 				02CC67EC252BD54E00166A1E /* SnapshotList.swift in Sources */,

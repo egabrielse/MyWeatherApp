@@ -8,9 +8,6 @@
 
 import Foundation
 
-fileprivate let snapshotFor = "https://api.weatherapi.com/v1/current.json?key=9793964830b44e928f3182858200510&q=";
-fileprivate let forecastFor = "https://api.weatherapi.com/v1/forecast.json?key=9793964830b44e928f3182858200510&q=";
-
 //  MARK: NetworkError
 enum NetworkError: Error {
     case statusCode(message: String)

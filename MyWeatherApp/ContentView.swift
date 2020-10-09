@@ -13,10 +13,13 @@ struct ContentView: View {
     
     var body: some View {
         
-        VStack(spacing:0) {
-            BriefOverview(report: testReport)
-            Divider()
-            HourlyForecastList(hourlyForecast: testReport.forecast.forecastday[1].hour)
+        ScrollView {
+            VStack(spacing:0) {
+                BriefOverview(report: testReport)
+                Divider()
+                HourlyForecastList(hourlyForecast: testReport.forecast.forecastday[1].hour)
+                DailyForecastList(dailyForecast: testReport.forecast.forecastday)
+            }
         }.background(Color.lightBlue)
     }
 }

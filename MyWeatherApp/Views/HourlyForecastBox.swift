@@ -33,7 +33,7 @@ struct HourlyForecastBox: View {
             Text(String(format: "%.f\u{00B0}", hour.temp_f))
                 .font(.system(size: 20))
                 .foregroundColor(Color.white)
-                .shadow(radius: 1)
+                .shadow(radius: 2)
             
             
             // Image:
@@ -48,7 +48,7 @@ struct HourlyForecastBox: View {
             Text(getTime(date:hour.time))
                 .font(.system(size: 20))
                 .foregroundColor(Color.white)
-                .shadow(radius: 1)
+                .shadow(radius: 2)
         }.frame(height:110).padding(.trailing).padding(.leading)
         
             

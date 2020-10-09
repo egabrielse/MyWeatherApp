@@ -118,6 +118,7 @@ extension ForecastDay {
     }
 }
 
+
 // MARK: Day
 struct Day: Codable, Hashable {
     let maxtemp_c: Double;
@@ -132,6 +133,16 @@ struct Day: Codable, Hashable {
     let daily_chance_of_rain: String;
     let daily_chance_of_snow: String;
 }
+
+extension Day {
+    var image: Image {
+        // Get the image id number
+        var imageId: String = String(String(condition.icon.suffix(7)).prefix(3));
+        return Image("day" + imageId);
+    }
+}
+
+
 
 // MARK: Astro
 struct Astro: Codable, Hashable {

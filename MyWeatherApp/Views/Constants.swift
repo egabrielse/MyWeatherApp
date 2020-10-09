@@ -12,6 +12,6 @@ import SwiftUI
 
 extension Color {
     public static var lightBlue: Color {
-        return Color(UIColor(red: 180/255, green: 230/255, blue: 255/255, alpha: 1.2))
+        return Color(UIColor(red: 135/255, green: 200/255, blue: 225/255, alpha: 0.75))
     }
 }
