@@ -17,10 +17,10 @@ struct BriefOverview: View {
             Text(report.location.name)
                 .fontWeight(.light)
                 .foregroundColor(Color.white)
-                .font(.system(size:60))
+                .font(.system(size:50))
                 .shadow(radius: 2)
                 .frame(height: 45)
-                .padding(.top)
+                .padding(.vertical)
             
              
             // Current temperature
@@ -57,7 +57,7 @@ struct BriefOverview: View {
                 .font(.system(size: 24))
                 .shadow(radius: 2)
                 
-        }.padding(.top).padding(.bottom)
+        }.padding(.top)
         .frame(maxWidth: .infinity)
     }
 }

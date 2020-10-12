@@ -30,10 +30,10 @@ struct DetailList: View {
     }
     
     var body: some View {
-        VStack(alignment:.leading, spacing:0) {
+        VStack(alignment:.leading, spacing:10) {
             Text("Current Weather Details").bold()
                 .foregroundColor(Color.white)
-                .font(.system(size:20))
+                .font(.system(size:24))
                 .opacity(0.75)
                 .shadow(radius: 2)
                 .padding(.leading)

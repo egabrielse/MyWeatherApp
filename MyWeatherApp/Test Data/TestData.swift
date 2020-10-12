@@ -8,10 +8,7 @@
 
 import Foundation
 
-let testSnapshots: [Snapshot] = load("testSnapshots.json");
 let testReport: Report = load("testReport.json");
-
-private var identifier = 1000;
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

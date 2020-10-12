@@ -16,30 +16,37 @@ enum NetworkError: Error {
     case standard(message: String)
 }
 
+//  MARK: Important Note:
+//  Currently, you will not be able to use the app as is.
+//  The url for making api calls is stored in a file that is ignored by git.
+//  This is to protect my api key from being overused (there is a limit to the number of requests per key)
+//  To run this on your own, create a free account on https://www.weatherapi.com and input your api key in the url below:
+// let forecastFor = "https://api.weatherapi.com/v1/forecast.json?key=_________________&q=";
+
 //  MARK: getUrl
-func getUrl(city: String, days: String? = nil) -> URL {
-    var urlString: String;
-    if let days = days {
-        urlString = forecastFor + city + "&days=" + days
+func getUrl(city: String) throws -> URL {
+    print("Constructing fetch-url...")
+    let urlString: String = forecastFor + city + "&days=3";
+
+    
+    if let spaceCodedUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
+        if let url = URL(string: spaceCodedUrlString) {
+            return url;
+        } else {
+            throw NetworkError.url(message: "Invalid url.")
+        }
     } else {
-        urlString = snapshotFor + city;
+        throw NetworkError.url(message: "Value of url was nil.")
     }
-    print(urlString)
-    return URL(string: urlString)!;
 }
 
 //  MARK: getWeatherData
 //  Calls the Weather Api to get a weather snapshot for a specific city.
-func getWeatherData(city: String, forecasted: Bool) throws -> Data? {
+func getWeatherData(city: String) throws -> Data? {
     // Current Async method: Using semaphores to "await" for a response.
     // TODO: Change this to be handled with Futures or Closures
     
-    var url: URL;
-    if forecasted {
-        url = getUrl(city: city, days: "3"); // With free account, limited to 3 day forecast...
-    } else {
-        url = getUrl(city: city);
-    }
+    let url: URL = try getUrl(city: city); // With free account, limited to 3 day forecast...
     
     let semaphore = DispatchSemaphore(value: 0);
     var data: Data?;
@@ -53,10 +60,12 @@ func getWeatherData(city: String, forecasted: Bool) throws -> Data? {
         semaphore.signal();
     }).resume();
     
+    print("Waiting on fetch request to return response...")
     let dispatchResult = semaphore.wait(timeout: DispatchTime.distantFuture);
     
+    print("Response received!")
     if dispatchResult == DispatchTimeoutResult.timedOut {
-        throw NetworkError.timeout(message: "Api call to has timed out.")
+        throw NetworkError.timeout(message: "Api call to has timed out...")
     }
     
     if let httpUrlResponse = response as? HTTPURLResponse {

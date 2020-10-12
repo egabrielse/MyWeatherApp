@@ -15,7 +15,7 @@ struct DailyForecastList: View {
         VStack(alignment:.leading,spacing:0) {
             Text("3-Day Forecast").bold()
                 .foregroundColor(Color.white)
-                .font(.system(size:20))
+                .font(.system(size:24))
                 .opacity(0.5)
                 .shadow(radius: 2)
                 .padding(.leading)

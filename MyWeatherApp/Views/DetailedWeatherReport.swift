@@ -9,20 +9,20 @@
 import SwiftUI
 
 struct DetailedWeatherReport: View {
-    @EnvironmentObject var userData: UserData;
+    var report: Report;
     
     var body: some View {
         
         VStack(spacing:0) {
-            BriefOverview(report: testReport)
+            BriefOverview(report: report)
             Divider()
             ScrollView {
                 VStack(spacing:0) {
-                    HourlyForecastList(hourlyForecast: testReport.forecast.forecastday[1].hour)
+                    HourlyForecastList(hourlyForecast: report.hours_24)
                     Divider()
-                    DailyForecastList(dailyForecast: testReport.forecast.forecastday)
+                    DailyForecastList(dailyForecast: report.forecast.forecastday)
                     Divider()
-                    DetailList(current: testReport.current, day: testReport.forecast.forecastday[0].day, astro: testReport.forecast.forecastday[0].astro)
+                    DetailList(current: report.current, day: report.forecast.forecastday[0].day, astro: report.forecast.forecastday[0].astro)
                 }
             }
         }.background(Color.lightBlue)
@@ -34,7 +34,7 @@ struct DetailedWeatherReport: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
-            DetailedWeatherReport().environmentObject(UserData())
+            DetailedWeatherReport(report: testReport)
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }

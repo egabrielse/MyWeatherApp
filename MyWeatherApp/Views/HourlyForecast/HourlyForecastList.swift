@@ -16,16 +16,15 @@ struct HourlyForecastList: View {
         VStack(alignment:.leading, spacing:0) {
             Text("Hourly Forecast").bold()
                 .foregroundColor(Color.white)
-                .font(.system(size:20))
+                .font(.system(size:24))
                 .opacity(0.5)
                 .shadow(radius: 2)
                 .padding(.leading)
                 .padding(.top)
             ScrollView(.horizontal) {
-                // TODO: Implement forecasting for only now and later
-                HStack {
-                    ForEach(hourlyForecast, id: \.time_epoch) {hour in
-                        HourlyForecastBox(hour: hour);
+                HStack(spacing:0) {
+                    ForEach(self.hourlyForecast, id: \.time_epoch) { hour in
+                        HourlyForecastBox(hour: hour)
                     }
                 }
             }
@@ -35,7 +34,7 @@ struct HourlyForecastList: View {
 
 struct HourlyForecastList_Previews: PreviewProvider {
     static var previews: some View {
-        HourlyForecastList(hourlyForecast: testReport.forecast.forecastday[1].hour)
+        HourlyForecastList(hourlyForecast: testReport.hours_24)
             .background(Color.lightBlue)
     }
 }

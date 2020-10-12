@@ -1,0 +1,40 @@
+//
+//  CityRow.swift
+//  MyWeatherApp
+//
+//  Created by Ethan Gabrielse on 10/5/20.
+//  Copyright © 2020 Ethan Gabrielse. All rights reserved.
+//
+
+import SwiftUI
+
+struct SnapshotRow: View {
+    var report: Report;
+    
+    var body: some View {
+        HStack() {
+            VStack (alignment: .leading) {
+                Text(report.location.name).bold().font(.system(size: 20))
+                    .foregroundColor(Color.white)
+                    .shadow(radius: 2)
+                Text(report.current.condition.text).font(.subheadline)
+                    .foregroundColor(Color.white)
+                    .shadow(radius: 2)
+            }
+            Spacer()
+            report.current.image.resizable().frame(height:50).frame(width:50);
+            Text(report.current.print_temp_f).bold()
+                .font(.system(size: 32))
+                .foregroundColor(Color.white)
+                .shadow(radius: 2)
+                
+                
+        }.padding(.horizontal)
+    }
+}
+
+struct CityRow_Previews: PreviewProvider {
+    static var previews: some View {
+        SnapshotRow(report: testReport)
+    }
+}

@@ -9,20 +9,6 @@
 import Foundation
 import SwiftUI
 
-//  MARK: Snapshot
-//  Used to decode JSON response bodies for current weather snapshots. 
-struct Snapshot: Codable, Hashable {
-    var location: Location;
-    var current: Current;
-}
-
-//  Extension that makes Snapshot identifiable.
-//  Id is a String of the city name and country.
-extension Snapshot: Identifiable {
-    var id: String {
-        return location.name + ", " + location.country
-    }
-}
 
 //  MARK: Report
 struct Report: Codable, Hashable {
@@ -36,6 +22,31 @@ struct Report: Codable, Hashable {
 extension Report: Identifiable {
     var id: String {
         return location.name + ", " + location.country
+    }
+}
+
+//  Builds a 24 hour long hourly forecast, starting with the current hour. 
+extension Report {
+    var hours_24: [Hour] {
+        var hours: [Hour] = [];
+        let fullForecast: [Hour] =
+            forecast.forecastday[0].hour +
+            forecast.forecastday[1].hour +
+            forecast.forecastday[2].hour;
+        
+        var counter = 24;
+        
+        for hour in fullForecast {
+            if hour.time + 3600 >= location.current_time {
+                hours.append(hour);
+                counter -= 1;
+            }
+            if counter == 0 {
+                break;
+            }
+        }
+        
+        return hours;
     }
 }
 
