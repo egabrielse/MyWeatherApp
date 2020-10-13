@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0241B7442532347C00BE3551 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241B7432532347C00BE3551 /* MainView.swift */; };
+		0271578E2536590700E56A9F /* ManageCities.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0271578A2536590700E56A9F /* ManageCities.gif */; };
+		0271578F2536590700E56A9F /* SelectCities.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0271578B2536590700E56A9F /* SelectCities.gif */; };
+		027157902536590700E56A9F /* PersitentData.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0271578C2536590700E56A9F /* PersitentData.gif */; };
+		027157912536590700E56A9F /* ViewReportDetails.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0271578D2536590700E56A9F /* ViewReportDetails.gif */; };
 		027552DF2535296F0028A177 /* AddCityModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027552DE2535296F0028A177 /* AddCityModal.swift */; };
 		027552E1253606B30028A177 /* ToggleTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027552E0253606B30028A177 /* ToggleTemperature.swift */; };
 		02CC67AE252BB36500166A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC67AD252BB36500166A1E /* AppDelegate.swift */; };
@@ -60,6 +64,10 @@
 
 /* Begin PBXFileReference section */
 		0241B7432532347C00BE3551 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0271578A2536590700E56A9F /* ManageCities.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ManageCities.gif; sourceTree = "<group>"; };
+		0271578B2536590700E56A9F /* SelectCities.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SelectCities.gif; sourceTree = "<group>"; };
+		0271578C2536590700E56A9F /* PersitentData.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PersitentData.gif; sourceTree = "<group>"; };
+		0271578D2536590700E56A9F /* ViewReportDetails.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ViewReportDetails.gif; sourceTree = "<group>"; };
 		027552DE2535296F0028A177 /* AddCityModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityModal.swift; sourceTree = "<group>"; };
 		027552E0253606B30028A177 /* ToggleTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTemperature.swift; sourceTree = "<group>"; };
 		02CC67AA252BB36500166A1E /* MyWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,6 +275,10 @@
 		02CC681A2530D0C000166A1E /* PortfolioGifs */ = {
 			isa = PBXGroup;
 			children = (
+				0271578A2536590700E56A9F /* ManageCities.gif */,
+				0271578C2536590700E56A9F /* PersitentData.gif */,
+				0271578B2536590700E56A9F /* SelectCities.gif */,
+				0271578D2536590700E56A9F /* ViewReportDetails.gif */,
 				02CC68212530D53D00166A1E /* WeatherReportOverview.gif */,
 			);
 			path = PortfolioGifs;
@@ -377,11 +389,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				02CC68202530D22A00166A1E /* .gitignore in Resources */,
+				0271578F2536590700E56A9F /* SelectCities.gif in Resources */,
 				02CC68222530D53E00166A1E /* WeatherReportOverview.gif in Resources */,
 				02CC67F8252CBFA300166A1E /* testReport.json in Resources */,
 				02CC67BA252BB36A00166A1E /* LaunchScreen.storyboard in Resources */,
 				02CC67B7252BB36A00166A1E /* Preview Assets.xcassets in Resources */,
 				02CC681E2530D1E900166A1E /* README.md in Resources */,
+				027157912536590700E56A9F /* ViewReportDetails.gif in Resources */,
+				027157902536590700E56A9F /* PersitentData.gif in Resources */,
+				0271578E2536590700E56A9F /* ManageCities.gif in Resources */,
 				02CC67B4252BB36A00166A1E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

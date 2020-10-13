@@ -23,9 +23,10 @@ enum URLType {
 
 //  MARK: Important Note:
 //  Currently, you will not be able to use the app as is.
-//  The url for making api calls is stored in a file that is ignored by git.
-//  This is to protect my api key from being overused (there is a limit to the number of requests per key)
-//  To run this on your own, create a free account on https://www.weatherapi.com and input your api key in the urls below:
+//  The exact url for making api calls is stored in a file that is ignored by git to protect
+//  the api key from being overused (there is a limit to the number of requests per key).
+//  To run this on your own, create a free account on https://www.weatherapi.com
+//  and input your api key in the urls below:
 //  let forecastFor = "https://api.weatherapi.com/v1/forecast.json?key=_________________&q=";
 //  let suggestions = "https://api.weatherapi.com/v1/search.json?key=_________________&q="
 
