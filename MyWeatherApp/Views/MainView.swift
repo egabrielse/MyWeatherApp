@@ -19,32 +19,35 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             VStack {
-                if controller.currentLocation >= controller.cities.count {
-                    Text("Current location not selected.").bold()
+                if controller.cl >= controller.cities.count {
+                    Button(action: {
+                        self.addCityViewShown.toggle();
+                    }) {
+                        Text("Tap here to select a location.").bold()
                         .foregroundColor(Color.white)
                         .font(.system(size:CGFloat(sectionHeaderSize)))
-                        .frame(height: 250)
+                    }.frame(height: 300)
                     
                 } else {
-                    BriefOverview(isMetric: self.controller.isMetric, report: controller.reports[controller.currentLocation])
+                    BriefOverview(isMetric: self.controller.isMetric, report: controller.reports[controller.cl])
                         .padding(.top)
                 }
                 
                 HStack {
                     ToggleTemperature(controller: self.controller)
+                        .padding(.leading)
                     Spacer()
                     Button(action: {
                         self.addCityViewShown.toggle();
                     }) {
-                        Image(systemName: "plus")
-                    }
-                }.padding(.leading).padding(.trailing)
+                        Image(systemName: "plus").resizable().frame(width: 16, height: 16)
+                    }.padding(.trailing)
+                }.padding(.horizontal)
+                
                 SnapshotList(controller: self.controller, isMetric: self.controller.isMetric, reports: controller.reports)
-                Spacer()
             }.background(Color.lightBlue)
             .edgesIgnoringSafeArea(.top)
             .navigationBarTitle("")
-            .navigationBarHidden(true)
         }.sheet(isPresented: $addCityViewShown) {
             AddCityModal(controller: self.controller)
         }

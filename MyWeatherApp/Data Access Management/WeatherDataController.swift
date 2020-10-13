@@ -10,44 +10,64 @@ import Foundation
 import CoreData
 import UIKit
 
+//  MARK: WeatherDataController
 final class WeatherDataController: ObservableObject {
+    
+    // Index into cities of current location
+    // TODO: Eventually switch over to using CoreLocation.
+    @Published var cl: Int;
     @Published var isMetric: Bool;
-    @Published var currentLocation: Int;
     @Published var cities: [String];
     @Published var reports: [Report];
     
 
     init() {
-        self.isMetric = true;
-        self.currentLocation = 0;
-        self.cities = ["Chicago", "New York", "Austin"];
-        
-        /*self.isMetric = UserDefaults.standard.bool(forKey: "isMetric");
-        self.currentLocation = UserDefaults.standard.integer(forKey: "currentLocation");
-        self.cities = UserDefaults.standard.stringArray(forKey: "cities") ?? [];*/
+        print("Initializing WeatherDataController.")
+        // self.isMetric = true;
+        // self.cities = ["Chicago", "New York", "Austin"];
+        self.cl = 0;
+        self.isMetric = UserDefaults.standard.bool(forKey: "isMetric");
+        self.cities = UserDefaults.standard.stringArray(forKey: "cities") ?? [];
         self.reports = [Report]();
     }
-    
+    //  MARK: addCity
     func addCity(newCity: String) {
+        print("Adding \(newCity) to list of cities.")
         self.cities.append(newCity);
         UserDefaults.standard.set(self.cities, forKey: "cities");
         self.loadWeatherReports();
     }
     
+    //  MARK: removeCity
     func removeCity(at offsets: IndexSet) {
+        print("Removing city at \(offsets.startIndex) from list of cities.")
         self.cities.remove(atOffsets: offsets);
         self.reports.remove(atOffsets: offsets);
         UserDefaults.standard.set(self.cities, forKey: "cities");
         self.loadWeatherReports();
-        
-        print("Cities = \(self.cities). Number reports = \(self.reports.count)")
     }
     
+    //  MARK: moveCity
+    func moveCity(from source: IndexSet, to destination: Int) {
+        print("Moving city at \(source.startIndex) \(destination) in list of cities.")
+        self.cities.move(fromOffsets: source, toOffset: destination);
+        self.reports.move(fromOffsets: source, toOffset: destination);
+        UserDefaults.standard.set(self.cities, forKey: "cities");
+    }
+    
+    //  MARK: toggleIsMetric
     func toggleIsMetric() {
+        print("Toggling isMetric \(self.isMetric ? "off" : "on")")
         self.isMetric.toggle();
         UserDefaults.standard.set(self.isMetric, forKey: "isMetric");
+        if self.isMetric {
+            print("Units of measurement are now Metric.")
+        } else {
+            print("Units of measurement are now U.S. Customary.")
+        }
     }
     
+    //  MARK: loadWeatherReports
     func loadWeatherReports(){
         print("Fetching weather reports for selected cities...\n")
         var loadedReports: [Report] = [];
@@ -56,7 +76,7 @@ final class WeatherDataController: ObservableObject {
             print("Fetching weather report for \(city)...")
             do {
                 let jsonData = try getWeatherData(city: city);
-                let report = decodeWeatherReport(data: jsonData!);
+                let report = try decodeWeatherReport(data: jsonData!);
                 loadedReports.append(report!);
             } catch NetworkError.standard(let message) {
                 print("Unable to load weather data for \(city):")

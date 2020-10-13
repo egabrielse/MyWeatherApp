@@ -24,7 +24,7 @@ struct DetailedWeatherReport: View {
                     DailyForecastList(isMetric: isMetric, dailyForecast: report.forecast.forecastday)
                     Divider()
                     DetailList(isMetric: isMetric, current: report.current, day: report.forecast.forecastday[0].day, astro: report.forecast.forecastday[0].astro)
-                }
+                }.padding(.bottom)
             }
         }.background(Color.lightBlue)
         .edgesIgnoringSafeArea(.top)

@@ -58,7 +58,7 @@ struct AddCityModal: View {
         
         do {
             let jsonData = try getCitySuggestions(city: city);
-            suggestions = decodeCitySuggestions(data: jsonData!)!;
+            suggestions = try decodeCitySuggestions(data: jsonData!) ?? [];
             print("Finished fetching city suggestions for \(city)!")
             self.suggestions = suggestions;
         } catch NetworkError.standard(let message) {

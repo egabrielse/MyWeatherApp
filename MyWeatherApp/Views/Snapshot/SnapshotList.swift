@@ -30,6 +30,7 @@ struct SnapshotList: View {
                     }
                 }.buttonStyle(PlainButtonStyle())
             }.onDelete(perform: controller.removeCity)
+            .onMove(perform: controller.moveCity)
         }.navigationBarItems(trailing: EditButton())
     }
 }
