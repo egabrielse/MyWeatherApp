@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0241B7442532347C00BE3551 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241B7432532347C00BE3551 /* MainView.swift */; };
+		027552DF2535296F0028A177 /* AddCityModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027552DE2535296F0028A177 /* AddCityModal.swift */; };
+		027552E1253606B30028A177 /* ToggleTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027552E0253606B30028A177 /* ToggleTemperature.swift */; };
 		02CC67AE252BB36500166A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC67AD252BB36500166A1E /* AppDelegate.swift */; };
 		02CC67B0252BB36500166A1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC67AF252BB36500166A1E /* SceneDelegate.swift */; };
 		02CC67B2252BB36500166A1E /* DetailedWeatherReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC67B1252BB36500166A1E /* DetailedWeatherReport.swift */; };
@@ -58,6 +60,8 @@
 
 /* Begin PBXFileReference section */
 		0241B7432532347C00BE3551 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		027552DE2535296F0028A177 /* AddCityModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityModal.swift; sourceTree = "<group>"; };
+		027552E0253606B30028A177 /* ToggleTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTemperature.swift; sourceTree = "<group>"; };
 		02CC67AA252BB36500166A1E /* MyWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CC67AD252BB36500166A1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02CC67AF252BB36500166A1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,8 +155,8 @@
 		027552AD2534EC640028A177 /* Snapshot */ = {
 			isa = PBXGroup;
 			children = (
-				02CC67EB252BD54E00166A1E /* SnapshotList.swift */,
 				02CC67E9252BD53B00166A1E /* SnapshotRow.swift */,
+				02CC67EB252BD54E00166A1E /* SnapshotList.swift */,
 			);
 			path = Snapshot;
 			sourceTree = "<group>";
@@ -225,9 +229,9 @@
 		02CC67DD252BB45800166A1E /* Data Access Management */ = {
 			isa = PBXGroup;
 			children = (
-				02CC680F252FF8A400166A1E /* ApiURL.swift */,
 				02CC67FB252E177200166A1E /* WeatherDataController.swift */,
 				02CC67E5252BD46C00166A1E /* DataModels.swift */,
+				02CC680F252FF8A400166A1E /* ApiURL.swift */,
 				02CC67F9252D6DA200166A1E /* ApiCalls.swift */,
 				02CC6805252F7C0800166A1E /* DataDecoders.swift */,
 			);
@@ -245,6 +249,8 @@
 				02CC67B1252BB36500166A1E /* DetailedWeatherReport.swift */,
 				02CC6801252E23A200166A1E /* BriefOverview.swift */,
 				02CC6807252F9F4A00166A1E /* Constants.swift */,
+				027552DE2535296F0028A177 /* AddCityModal.swift */,
+				027552E0253606B30028A177 /* ToggleTemperature.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -405,6 +411,7 @@
 				0241B7442532347C00BE3551 /* MainView.swift in Sources */,
 				02CC67AE252BB36500166A1E /* AppDelegate.swift in Sources */,
 				02CC68182530A28C00166A1E /* DetailList.swift in Sources */,
+				027552DF2535296F0028A177 /* AddCityModal.swift in Sources */,
 				02CC67B0252BB36500166A1E /* SceneDelegate.swift in Sources */,
 				02CC681225300F1E00166A1E /* DailyForecastList.swift in Sources */,
 				02CC6802252E23A200166A1E /* BriefOverview.swift in Sources */,
@@ -412,6 +419,7 @@
 				02CC67FC252E177200166A1E /* WeatherDataController.swift in Sources */,
 				02CC67FA252D6DA200166A1E /* ApiCalls.swift in Sources */,
 				02CC67EC252BD54E00166A1E /* SnapshotList.swift in Sources */,
+				027552E1253606B30028A177 /* ToggleTemperature.swift in Sources */,
 				02CC6808252F9F4A00166A1E /* Constants.swift in Sources */,
 				02CC6800252E234D00166A1E /* HourlyForecastBox.swift in Sources */,
 				02CC6806252F7C0800166A1E /* DataDecoders.swift in Sources */,

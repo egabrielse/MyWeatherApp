@@ -297,3 +297,11 @@ extension Hour {
         return Image(imageId);
     }
 }
+
+//  MARK: LocationSuggestion
+struct LocationSuggestion: Codable, Hashable, Identifiable {
+    let id: Int;
+    let name: String;
+    let region: String;
+    let country: String;
+}

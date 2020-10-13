@@ -15,3 +15,5 @@ extension Color {
         return Color(UIColor(red: 135/255, green: 200/255, blue: 235/255, alpha: 0.75))
     }
 }
+
+let sectionHeaderSize: Int = 20;

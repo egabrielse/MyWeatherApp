@@ -11,20 +11,41 @@ import CoreData
 import UIKit
 
 final class WeatherDataController: ObservableObject {
-    // TODO: At the moment, only displaying fahrenheit.
-    // Will later be updated to display fahrenheit or celsius
-    @Published var isCelsius: Bool;
+    @Published var isMetric: Bool;
     @Published var currentLocation: Int;
     @Published var cities: [String];
     @Published var reports: [Report];
     
 
     init() {
-        self.isCelsius = UserDefaults.standard.bool(forKey: "isCelsius");
+        self.isMetric = true;
+        self.currentLocation = 0;
+        self.cities = ["Chicago", "New York", "Austin"];
+        
+        /*self.isMetric = UserDefaults.standard.bool(forKey: "isMetric");
         self.currentLocation = UserDefaults.standard.integer(forKey: "currentLocation");
-        self.cities = ["Chicago", "New York", "San Francisco", "Boston"];
-        // self.cities = UserDefaults.standard.stringArray(forKey: "cities") ?? [];
+        self.cities = UserDefaults.standard.stringArray(forKey: "cities") ?? [];*/
         self.reports = [Report]();
+    }
+    
+    func addCity(newCity: String) {
+        self.cities.append(newCity);
+        UserDefaults.standard.set(self.cities, forKey: "cities");
+        self.loadWeatherReports();
+    }
+    
+    func removeCity(at offsets: IndexSet) {
+        self.cities.remove(atOffsets: offsets);
+        self.reports.remove(atOffsets: offsets);
+        UserDefaults.standard.set(self.cities, forKey: "cities");
+        self.loadWeatherReports();
+        
+        print("Cities = \(self.cities). Number reports = \(self.reports.count)")
+    }
+    
+    func toggleIsMetric() {
+        self.isMetric.toggle();
+        UserDefaults.standard.set(self.isMetric, forKey: "isMetric");
     }
     
     func loadWeatherReports(){
@@ -50,7 +71,7 @@ final class WeatherDataController: ObservableObject {
                 print("Unable to load weather data for \(city):")
                 print("\(message)\n");
             } catch {
-                print("Unexpected error while loading weather data for \(city): \n");
+                print("Unexpected error while fetching weather data for \(city): \n");
                 print("\(error)\n")
             }
             print("Successfully fetched weather report for \(city)!\n");

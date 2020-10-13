@@ -9,12 +9,13 @@
 import SwiftUI
 
 struct HourlyForecastBox: View {
+    var isMetric: Bool;
     var hour: Hour;
     
     var body: some View {
         VStack(spacing: 0) {
             // Temperature:
-            Text(hour.print_temp_f)
+            Text(isMetric ? hour.print_temp_c : hour.print_temp_f )
                 .font(.system(size: 20))
                 .foregroundColor(Color.white)
                 .shadow(radius: 2)
@@ -42,13 +43,13 @@ struct HourForecastBox_Previews: PreviewProvider {
     static var previews: some View {
         ScrollView (.horizontal, showsIndicators: true) {
              HStack {
-                HourlyForecastBox(hour: testReport.forecast.forecastday[1].hour[3])
-                HourlyForecastBox(hour: testReport.forecast.forecastday[1].hour[4])
-                HourlyForecastBox(hour: testReport.forecast.forecastday[1].hour[5])
-                HourlyForecastBox(hour: testReport.forecast.forecastday[1].hour[6])
-                HourlyForecastBox(hour: testReport.forecast.forecastday[1].hour[7])
-                HourlyForecastBox(hour: testReport.forecast.forecastday[1].hour[8])
-                HourlyForecastBox(hour: testReport.forecast.forecastday[1].hour[9])
+                HourlyForecastBox(isMetric: true, hour: testReport.forecast.forecastday[1].hour[3])
+                HourlyForecastBox(isMetric: true, hour: testReport.forecast.forecastday[1].hour[4])
+                HourlyForecastBox(isMetric: true, hour: testReport.forecast.forecastday[1].hour[5])
+                HourlyForecastBox(isMetric: true, hour: testReport.forecast.forecastday[1].hour[6])
+                HourlyForecastBox(isMetric: true, hour: testReport.forecast.forecastday[1].hour[7])
+                HourlyForecastBox(isMetric: true, hour: testReport.forecast.forecastday[1].hour[8])
+                HourlyForecastBox(isMetric: true, hour: testReport.forecast.forecastday[1].hour[9])
              }.background(Color.lightBlue)
         }.frame(height: 100)
     }

@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct DailyForecastRow: View {
+    var isMetric: Bool;
     var forecastDay: ForecastDay;
     
     var body: some View {
@@ -21,12 +22,18 @@ struct DailyForecastRow: View {
             Spacer()
             forecastDay.day.image.resizable().frame(height: 35).frame(width:35)
             Spacer()
-            Text(forecastDay.day.print_maxtemp_f).bold()
+            Text(isMetric ?
+                forecastDay.day.print_maxtemp_c :
+                forecastDay.day.print_maxtemp_f)
+                .bold()
                 .font(.system(size:20))
                 .foregroundColor(Color.white)
                 .shadow(radius: 2)
                 
-            Text(forecastDay.day.print_mintemp_f).bold()
+            Text(isMetric ?
+            forecastDay.day.print_mintemp_c :
+            forecastDay.day.print_mintemp_f)
+                .bold()
                 .font(.system(size:20))
                 .foregroundColor(Color.white)
                 .shadow(radius: 2)
@@ -38,11 +45,11 @@ struct DailyForecastRow_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             Divider()
-            DailyForecastRow(forecastDay: testReport.forecast.forecastday[0])
+            DailyForecastRow(isMetric: true, forecastDay: testReport.forecast.forecastday[0])
             Divider()
-            DailyForecastRow(forecastDay: testReport.forecast.forecastday[1])
+            DailyForecastRow(isMetric: true, forecastDay: testReport.forecast.forecastday[1])
             Divider()
-            DailyForecastRow(forecastDay: testReport.forecast.forecastday[2])
+            DailyForecastRow(isMetric: true, forecastDay: testReport.forecast.forecastday[2])
             Divider()
         }.background(Color.lightBlue)
         

@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct BriefOverview: View {
+    var isMetric: Bool;
     var report: Report;
     
     var body: some View {
@@ -24,8 +25,9 @@ struct BriefOverview: View {
             
              
             // Current temperature
-            // TODO: Center the temperature, ignoring the degree symbol
-            Text(report.current.print_temp_f)
+            Text(isMetric ?
+                report.current.print_temp_c :
+                report.current.print_temp_f)
                 .foregroundColor(Color.white)
                 .font(.system(size:100))
                 .fontWeight(.thin)
@@ -36,7 +38,7 @@ struct BriefOverview: View {
             // Hstack containts: weather high, low, and image
             HStack {
                 // Highest temperature of the day
-                Text(report.forecast.forecastday[0].day.print_maxtemp_f)
+                Text(isMetric ? report.forecast.forecastday[0].day.print_maxtemp_c : report.forecast.forecastday[0].day.print_maxtemp_f)
                     .foregroundColor(Color.white)
                     .font(.system(size:32))
                     .shadow(radius: 2)
@@ -45,7 +47,7 @@ struct BriefOverview: View {
                 report.current.image.resizable().frame(height:100).frame(width:100)
                 
                 // Lowest temperature of the day
-                Text(report.forecast.forecastday[0].day.print_mintemp_f)
+                Text(isMetric ? report.forecast.forecastday[0].day.print_mintemp_c : report.forecast.forecastday[0].day.print_mintemp_f)
                     .foregroundColor(Color.white)
                     .font(.system(size:32))
                     .shadow(radius: 2)
@@ -64,11 +66,7 @@ struct BriefOverview: View {
 
 struct CurrentForecast_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
-            BriefOverview(report: testReport).background(Color.lightBlue)
-                .previewDevice(PreviewDevice(rawValue: deviceName))
-                .previewDisplayName(deviceName)
-        }
+        BriefOverview(isMetric: true, report: testReport).background(Color.lightBlue)
         
     }
 }

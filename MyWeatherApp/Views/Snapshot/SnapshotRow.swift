@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct SnapshotRow: View {
+    var isMetric: Bool;
     var report: Report;
     
     var body: some View {
@@ -23,7 +24,10 @@ struct SnapshotRow: View {
             }
             Spacer()
             report.current.image.resizable().frame(height:50).frame(width:50);
-            Text(report.current.print_temp_f).bold()
+            Text(isMetric ?
+                report.current.print_temp_c :
+                report.current.print_temp_f)
+                .bold()
                 .font(.system(size: 32))
                 .foregroundColor(Color.white)
                 .shadow(radius: 2)
@@ -35,6 +39,6 @@ struct SnapshotRow: View {
 
 struct CityRow_Previews: PreviewProvider {
     static var previews: some View {
-        SnapshotRow(report: testReport)
+        SnapshotRow(isMetric: true, report: testReport)
     }
 }

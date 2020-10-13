@@ -9,24 +9,33 @@
 import SwiftUI
 
 struct SnapshotList: View {
+    @ObservedObject var controller: WeatherDataController;
+    var isMetric: Bool;
     var reports: [Report];
     
+    init(controller: WeatherDataController, isMetric: Bool, reports: [Report]) {
+        self.controller = controller;
+        self.isMetric = isMetric;
+        self.reports = reports;
+        UITableView.appearance().backgroundColor = .clear;
+        UITableViewCell.appearance().backgroundColor = .clear;
+    }
+    
     var body: some View {
-        ScrollView {
+        List {
             ForEach(reports, id: \.id) { report in
-                NavigationLink(destination: DetailedWeatherReport(report: report)) {
+                NavigationLink(destination: DetailedWeatherReport(isMetric: self.isMetric, report: report)) {
                     VStack(spacing:0) {
-                        SnapshotRow(report: report)
-                        Divider()
+                        SnapshotRow(isMetric: self.isMetric, report: report)
                     }
                 }.buttonStyle(PlainButtonStyle())
-            }
-        }
+            }.onDelete(perform: controller.removeCity)
+        }.navigationBarItems(trailing: EditButton())
     }
 }
 
 struct CityList_Previews: PreviewProvider {
     static var previews: some View {
-        SnapshotList(reports: [testReport])
+        SnapshotList(controller: WeatherDataController(), isMetric: true, reports: [testReport])
     }
 }

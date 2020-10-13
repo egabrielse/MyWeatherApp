@@ -11,7 +11,7 @@ import Foundation
 
 //  MARK: decodeWeatherReport
 func decodeWeatherReport(data: Data) -> Report? {
-    print("Attempting to decode weather response body...")
+    print("Attempting to decode weather data from response body...")
     var newReport: Report?;
     
     do {
@@ -20,4 +20,17 @@ func decodeWeatherReport(data: Data) -> Report? {
         print(error);
     }
     return newReport;
+}
+
+//  MARK: decodeCitySuggestions
+func decodeCitySuggestions(data: Data) -> [LocationSuggestion]? {
+    print("Attempting to decode city suggestions from response body...")
+    var suggestions: [LocationSuggestion]?;
+    
+    do {
+        suggestions = try JSONDecoder().decode([LocationSuggestion].self, from: data);
+    } catch {
+        print(error);
+    }
+    return suggestions;
 }
