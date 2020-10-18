@@ -16,11 +16,7 @@ struct SnapshotRow: View {
         HStack() {
             VStack (alignment: .leading) {
                 Text(report.location.name).bold().font(.system(size: 20))
-                    .foregroundColor(Color.white)
-                    .shadow(radius: 2)
                 Text(report.current.condition.text).font(.subheadline)
-                    .foregroundColor(Color.white)
-                    .shadow(radius: 2)
             }
             Spacer()
             report.current.image.resizable().frame(height:50).frame(width:50);
@@ -28,10 +24,7 @@ struct SnapshotRow: View {
                 report.current.print_temp_c :
                 report.current.print_temp_f)
                 .bold()
-                .font(.system(size: 32))
-                .foregroundColor(Color.white)
-                .shadow(radius: 2)
-                
+                .font(.system(size: 32))                
                 
         }.padding(.horizontal)
     }

@@ -166,11 +166,11 @@ extension ForecastDay {
 extension ForecastDay {
     var day_of_the_week: String {
         let dateFormatter = DateFormatter();
+        dateFormatter.timeZone = TimeZone(identifier: "GMT")
         dateFormatter.dateFormat = "EEEE";
         return dateFormatter.string(from: current_time)
     }
 }
-
 
 // MARK: Day
 struct Day: Codable, Hashable {

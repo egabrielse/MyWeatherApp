@@ -37,6 +37,6 @@ struct SnapshotList: View {
 
 struct CityList_Previews: PreviewProvider {
     static var previews: some View {
-        SnapshotList(controller: WeatherDataController(), isMetric: true, reports: [testReport])
+        SnapshotList(controller: WeatherDataController(), isMetric: true, reports: [testReport]).background(Color.lightBlue)
     }
 }
